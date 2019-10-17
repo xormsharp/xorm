@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"strings"
 
-	"xorm.io/builder"
-	"xorm.io/core"
+	"github.com/xormsharp/builder"
+	"github.com/xormsharp/core"
 )
 
 // Insert insert one or more beans

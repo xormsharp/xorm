@@ -11,7 +11,7 @@ clone:
 
 workspace:
   base: /go
-  path: src/github.com/go-xorm/xorm
+  path: src/github.com/xormsharp/xorm
 
 steps:
 - name: git
@@ -33,8 +33,8 @@ steps:
   image: golang:1.10
   commands:
   - go get -t -d -v ./...
-  - go get -u xorm.io/core
-  - go get -u xorm.io/builder
+  - go get -u github.com/xormsharp/core
+  - go get -u github.com/xormsharp/builder
   - go build -v
   when:
     event:
@@ -191,7 +191,7 @@ clone:
 
 workspace:
   base: /go
-  path: src/github.com/go-xorm/xorm
+  path: src/github.com/xormsharp/xorm
 
 steps:
 - name: git
@@ -215,8 +215,8 @@ steps:
     GO111MODULE: "off"
   commands:
     - go get -t -d -v ./...	
-    - go get -u xorm.io/core	
-    - go get -u xorm.io/builder
+    - go get -u github.com/xormsharp/core
+    - go get -u github.com/xormsharp/builder
     - go build -v
   when:
     event:
@@ -411,7 +411,7 @@ clone:
 
 workspace:
   base: /go
-  path: src/github.com/go-xorm/xorm
+  path: src/github.com/xormsharp/xorm
 
 steps:
 - name: git
@@ -428,8 +428,8 @@ steps:
     GO111MODULE: "off"
   commands:
     - go get -t -d -v ./...	
-    - go get -u xorm.io/core	
-    - go get -u xorm.io/builder
+    - go get -u github.com/xormsharp/core
+    - go get -u github.com/xormsharp/builder
     - go build -v
   when:
     event:
@@ -623,7 +623,7 @@ clone:
 
 workspace:
   base: /go
-  path: src/github.com/go-xorm/xorm
+  path: src/github.com/xormsharp/xorm
 
 steps:
 - name: git
@@ -640,8 +640,8 @@ steps:
     GO111MODULE: "off"
   commands:
     - go get -t -d -v ./...	
-    - go get -u xorm.io/core	
-    - go get -u xorm.io/builder
+    - go get -u github.com/xormsharp/core
+    - go get -u github.com/xormsharp/builder
     - go build -v
   when:
     event:

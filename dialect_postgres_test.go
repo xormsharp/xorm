@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"xorm.io/core"
+	"github.com/xormsharp/core"
 )
 
 func TestParsePostgres(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"xorm.io/core"
+	"github.com/xormsharp/core"
 )
 
 var colStrTests = []struct {

@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"xorm.io/core"
+	"github.com/xormsharp/core"
 )
 
 // Ping test if database is ok

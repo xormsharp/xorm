@@ -1,11 +1,11 @@
 # xorm HAS BEEN MOVED TO https://gitea.com/xorm/xorm . THIS REPOSITORY WILL NOT BE UPDATED ANY MORE.
 
-[中文](https://github.com/go-xorm/xorm/blob/master/README_CN.md)
+[中文](https://github.com/xormsharp/xorm/blob/master/README_CN.md)
 
 Xorm is a simple and powerful ORM for Go.
 
-[![CircleCI](https://circleci.com/gh/go-xorm/xorm.svg?style=shield)](https://circleci.com/gh/go-xorm/xorm) [![codecov](https://codecov.io/gh/go-xorm/xorm/branch/master/graph/badge.svg)](https://codecov.io/gh/go-xorm/xorm)
-[![](https://goreportcard.com/badge/github.com/go-xorm/xorm)](https://goreportcard.com/report/github.com/go-xorm/xorm) 
+[![CircleCI](https://circleci.com/gh/xormsharp/xorm.svg?style=shield)](https://circleci.com/gh/xormsharp/xorm) [![codecov](https://codecov.io/gh/xormsharp/xorm/branch/master/graph/badge.svg)](https://codecov.io/gh/xormsharp/xorm)
+[![](https://goreportcard.com/badge/github.com/xormsharp/xorm)](https://goreportcard.com/report/github.com/xormsharp/xorm) 
 [![Join the chat at https://img.shields.io/discord/323460943201959939.svg](https://img.shields.io/discord/323460943201959939.svg)](https://discord.gg/HuR2CF3)
 
 ## Features
@@ -22,13 +22,13 @@ Xorm is a simple and powerful ORM for Go.
 
 * Query Cache speed up
 
-* Database Reverse support, See [Xorm Tool README](https://github.com/go-xorm/cmd/blob/master/README.md)
+* Database Reverse support, See [Xorm Tool README](https://github.com/xormsharp/cmd/blob/master/README.md)
 
 * Simple cascade loading support
 
 * Optimistic Locking support
 
-* SQL Builder support via [xorm.io/builder](https://xorm.io/builder)
+* SQL Builder support via [github.com/xormsharp/builder](https://github.com/xormsharp/builder)
 
 * Automatical Read/Write seperatelly
 
@@ -56,13 +56,13 @@ Drivers for Go's sql package which currently support database/sql includes:
 
 ## Installation
 
-	go get github.com/go-xorm/xorm
+	go get github.com/xormsharp/xorm
 
 ## Documents
 
-* [Manual](http://xorm.io/docs)
+* [Manual](http://github.com/xormsharp/docs)
 
-* [GoDoc](http://godoc.org/github.com/go-xorm/xorm)
+* [GoDoc](http://godoc.org/github.com/xormsharp/xorm)
 
 ## Quick Start
 
@@ -419,7 +419,7 @@ res, err := engine.Transaction(func(session *xorm.Session) (interface{}, error) 
 
 ## Contributing
 
-If you want to pull request, please see [CONTRIBUTING](https://github.com/go-xorm/xorm/blob/master/CONTRIBUTING.md). And we also provide [Xorm on Google Groups](https://groups.google.com/forum/#!forum/xorm) to discuss.
+If you want to pull request, please see [CONTRIBUTING](https://github.com/xormsharp/xorm/blob/master/CONTRIBUTING.md). And we also provide [Xorm on Google Groups](https://groups.google.com/forum/#!forum/xorm) to discuss.
 
 ## Credits
 
@@ -460,7 +460,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
     * BufferSize on Iterate
     * fix some other bugs.
 
-[More changes ...](https://github.com/go-xorm/manual-en-US/tree/master/chapter-16)
+[More changes ...](https://github.com/xormsharp/manual-en-US/tree/master/chapter-16)
 
 ## Cases
 

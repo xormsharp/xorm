@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"xorm.io/builder"
-	"xorm.io/core"
+	"github.com/xormsharp/builder"
+	"github.com/xormsharp/core"
 )
 
 func (session *Session) cacheUpdate(table *core.Table, tableName, sqlStr string, args ...interface{}) error {

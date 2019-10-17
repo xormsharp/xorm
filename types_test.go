@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"testing"
 
-	"xorm.io/core"
 	"github.com/stretchr/testify/assert"
+	"github.com/xormsharp/core"
 )
 
 func TestArrayField(t *testing.T) {

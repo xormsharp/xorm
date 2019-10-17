@@ -7,8 +7,8 @@ package xorm
 import (
 	"testing"
 
-	"xorm.io/core"
 	"github.com/stretchr/testify/assert"
+	"github.com/xormsharp/core"
 )
 
 func TestLRUCache(t *testing.T) {

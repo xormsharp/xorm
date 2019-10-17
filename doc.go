@@ -10,7 +10,7 @@ Installation
 
 Make sure you have installed Go 1.6+ and then:
 
-    go get github.com/go-xorm/xorm
+    go get github.com/xormsharp/xorm
 
 Create Engine
 
@@ -179,6 +179,6 @@ Attention: the above 8 methods should be the last chainable method.
     engine.Join("LEFT", "userdetail", "user.id=userdetail.id").Find(&users)
     //SELECT * FROM user LEFT JOIN userdetail ON user.id=userdetail.id
 
-More usage, please visit http://xorm.io/docs
+More usage, please visit http://github.com/xormsharp/docs
 */
 package xorm

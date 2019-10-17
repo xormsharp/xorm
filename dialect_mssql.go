@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"xorm.io/core"
+	"github.com/xormsharp/core"
 )
 
 var (

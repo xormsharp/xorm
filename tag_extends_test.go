@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"xorm.io/core"
 	"github.com/stretchr/testify/assert"
+	"github.com/xormsharp/core"
 )
 
 type tempUser struct {

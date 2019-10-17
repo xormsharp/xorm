@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"xorm.io/core"
+	"github.com/xormsharp/core"
 )
 
 // LRUCacher implments cache object facilities

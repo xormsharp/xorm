@@ -30,13 +30,13 @@ jobs:
 
       - image: pingcap/tidb:v2.1.2
 
-    working_directory: /go/src/github.com/go-xorm/xorm
+    working_directory: /go/src/github.com/xormsharp/xorm
     steps:
       - checkout
 
       - run: go get -t -d -v ./...
-      - run: go get -u xorm.io/core
-      - run: go get -u xorm.io/builder
+      - run: go get -u github.com/xormsharp/core
+      - run: go get -u github.com/xormsharp/builder
       - run: GO111MODULE=off go build -v
       - run: GO111MODULE=on go build -v
 

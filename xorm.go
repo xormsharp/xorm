@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	"xorm.io/core"
+	"github.com/xormsharp/core"
 )
 
 const (
