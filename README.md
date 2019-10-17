@@ -8,7 +8,7 @@ Xorm is a simple and powerful ORM for Go.
 [![CircleCI](https://circleci.com/gh/xormsharp/xorm.svg?style=shield)](https://circleci.com/gh/xormsharp/xorm) [![codecov](https://codecov.io/gh/xormsharp/xorm/branch/master/graph/badge.svg)](https://codecov.io/gh/xormsharp/xorm)
 [![](https://goreportcard.com/badge/github.com/xormsharp/xorm)](https://goreportcard.com/report/github.com/xormsharp/xorm) 
 [![Join the chat at https://img.shields.io/discord/323460943201959939.svg](https://img.shields.io/discord/323460943201959939.svg)](https://discord.gg/HuR2CF3)
-
+[![Release](https://img.shields.io/github/release/xormsharp/xorm.svg)](https://github.com/xormsharp/xorm/releases/latest)
 ## Features
 
 * Struct <-> Table Mapping Support
