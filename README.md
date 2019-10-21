@@ -1,6 +1,9 @@
 ### THE NEWEST FORK FROM XORM
 ##### THE OWNER NO LONGER UPDATES HIS LIBRARY ON GITHUB. I HOPE WE CAN CONTINUE TO UPDATE AND MAINTAIN HERE.
 ##### BECAUSE PUT THE CODE IN THE GFW IS A VERY DANGEROUS THING, YOU MAY NOT BE ABLE TO ACCESS IT AT ANY TIME.
+
+# As I said,just now gitea.com is 404, gitee.com is 404
+
 [中文](https://github.com/xormsharp/xorm/blob/master/README_CN.md)
 
 Xorm is a simple and powerful ORM for Go.
