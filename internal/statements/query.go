@@ -10,8 +10,8 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/xormsharp/builder"
 	"github.com/xormsharp/schemas"
-	"xorm.io/builder"
 )
 
 func (statement *Statement) GenQuerySQL(sqlOrArgs ...interface{}) (string, []interface{}, error) {

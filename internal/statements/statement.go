@@ -12,6 +12,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/xormsharp/builder"
 	"github.com/xormsharp/contexts"
 	"github.com/xormsharp/convert"
 	"github.com/xormsharp/dialects"
@@ -19,7 +20,6 @@ import (
 	"github.com/xormsharp/internal/utils"
 	"github.com/xormsharp/schemas"
 	"github.com/xormsharp/tags"
-	"xorm.io/builder"
 )
 
 var (

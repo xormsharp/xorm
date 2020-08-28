@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/xormsharp/builder"
 	"github.com/xormsharp/core"
 	"github.com/xormsharp/internal/utils"
-	"xorm.io/builder"
 )
 
 // Rows rows wrapper a rows to
