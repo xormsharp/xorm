@@ -11,9 +11,9 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/xormsharp/caches"
-	"github.com/xormsharp/internal/utils"
-	"github.com/xormsharp/schemas"
+	"github.com/xormsharp/xorm/caches"
+	"github.com/xormsharp/xorm/internal/utils"
+	"github.com/xormsharp/xorm/schemas"
 )
 
 // Get retrieve one record from database, bean's non-empty fields

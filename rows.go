@@ -11,8 +11,8 @@ import (
 	"reflect"
 
 	"github.com/xormsharp/builder"
-	"github.com/xormsharp/core"
-	"github.com/xormsharp/internal/utils"
+	"github.com/xormsharp/xorm/core"
+	"github.com/xormsharp/xorm/internal/utils"
 )
 
 // Rows rows wrapper a rows to

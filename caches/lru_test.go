@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/xormsharp/schemas"
+	"github.com/xormsharp/xorm/schemas"
 )
 
 func TestLRUCache(t *testing.T) {

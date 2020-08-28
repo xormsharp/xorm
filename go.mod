@@ -9,8 +9,8 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.0
 	github.com/stretchr/testify v1.4.0
 	github.com/syndtr/goleveldb v1.0.0
-	github.com/xormsharp/builder v0.3.6 // indirect
-	github.com/xormsharp/core v0.7.2 // indirect
+	github.com/xormsharp/builder v0.3.6
+	github.com/xormsharp/core v0.7.2
 	github.com/ziutek/mymysql v1.5.4
 	xorm.io/builder v0.3.7
 )

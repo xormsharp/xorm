@@ -10,12 +10,12 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/xormsharp/caches"
-	"github.com/xormsharp/contexts"
-	"github.com/xormsharp/dialects"
-	"github.com/xormsharp/log"
-	"github.com/xormsharp/names"
-	"github.com/xormsharp/schemas"
+	"github.com/xormsharp/xorm/caches"
+	"github.com/xormsharp/xorm/contexts"
+	"github.com/xormsharp/xorm/dialects"
+	"github.com/xormsharp/xorm/log"
+	"github.com/xormsharp/xorm/names"
+	"github.com/xormsharp/xorm/schemas"
 )
 
 // Interface defines the interface which Engine, EngineGroup and Session will implementate.

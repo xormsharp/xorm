@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/xormsharp/builder"
-	"github.com/xormsharp/schemas"
+	"github.com/xormsharp/xorm/schemas"
 )
 
 func (statement *Statement) writeInsertOutput(buf *strings.Builder, table *schemas.Table) error {

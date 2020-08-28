@@ -12,8 +12,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/xormsharp/internal/utils"
-	"github.com/xormsharp/schemas"
+	"github.com/xormsharp/xorm/internal/utils"
+	"github.com/xormsharp/xorm/schemas"
 )
 
 // Ping test if database is ok

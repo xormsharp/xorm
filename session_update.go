@@ -12,9 +12,9 @@ import (
 	"strings"
 
 	"github.com/xormsharp/builder"
-	"github.com/xormsharp/caches"
-	"github.com/xormsharp/internal/utils"
-	"github.com/xormsharp/schemas"
+	"github.com/xormsharp/xorm/caches"
+	"github.com/xormsharp/xorm/internal/utils"
+	"github.com/xormsharp/xorm/schemas"
 )
 
 func (session *Session) cacheUpdate(table *schemas.Table, tableName, sqlStr string, args ...interface{}) error {

@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xormsharp/schemas"
+	"github.com/xormsharp/xorm/schemas"
 )
 
 func splitTag(tag string) (tags []string) {

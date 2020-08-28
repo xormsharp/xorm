@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xormsharp/internal/utils"
+	"github.com/xormsharp/xorm/internal/utils"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -7,7 +7,7 @@ package statements
 import (
 	"strings"
 
-	"github.com/xormsharp/schemas"
+	"github.com/xormsharp/xorm/schemas"
 )
 
 type columnMap []string

@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xormsharp/names"
+	"github.com/xormsharp/xorm/names"
 
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/mattn/go-sqlite3"

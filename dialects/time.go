@@ -7,7 +7,7 @@ package dialects
 import (
 	"time"
 
-	"github.com/xormsharp/schemas"
+	"github.com/xormsharp/xorm/schemas"
 )
 
 // FormatTime format time as column type
