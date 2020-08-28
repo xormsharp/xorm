@@ -8,7 +8,7 @@ import (
 
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/stretchr/testify/assert"
-	"github.com/xormsharp/xorm"
+	"github.com/xormsharp"
 )
 
 type Person struct {

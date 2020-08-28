@@ -1,76 +1,71 @@
-### THE NEWEST FORK FROM XORM
-##### THE OWNER NO LONGER UPDATES HIS LIBRARY ON GITHUB. I HOPE WE CAN CONTINUE TO UPDATE AND MAINTAIN HERE.
-##### BECAUSE PUT THE CODE IN THE GFW IS A VERY DANGEROUS THING, YOU MAY NOT BE ABLE TO ACCESS IT AT ANY TIME.
+# xorm
 
-# As I said,just now gitea.com is 404, gitee.com is 404.
-
-[中文](https://github.com/xormsharp/xorm/blob/master/README_CN.md)
+[中文](https://gitea.com/xorm/xorm/src/branch/master/README_CN.md)
 
 Xorm is a simple and powerful ORM for Go.
 
-[![CircleCI](https://circleci.com/gh/xormsharp/xorm.svg?style=shield)](https://circleci.com/gh/xormsharp/xorm) [![codecov](https://codecov.io/gh/xormsharp/xorm/branch/master/graph/badge.svg)](https://codecov.io/gh/xormsharp/xorm)
-[![](https://goreportcard.com/badge/github.com/xormsharp/xorm)](https://goreportcard.com/report/github.com/xormsharp/xorm) 
-[![Join the chat at https://img.shields.io/discord/323460943201959939.svg](https://img.shields.io/discord/323460943201959939.svg)](https://discord.gg/HuR2CF3)
-[![Release](https://img.shields.io/github/release/xormsharp/xorm.svg)](https://github.com/xormsharp/xorm/releases/latest)
+[![Build Status](https://drone.gitea.com/api/badges/xorm/xorm/status.svg)](https://drone.gitea.com/xorm/xorm) [![](http://gocover.io/_badge/xorm.io/xorm)](https://gocover.io/xorm.io/xorm) [![](https://goreportcard.com/badge/xorm.io/xorm)](https://goreportcard.com/report/xorm.io/xorm) [![Join the chat at https://img.shields.io/discord/323460943201959939.svg](https://img.shields.io/discord/323460943201959939.svg)](https://discord.gg/HuR2CF3)
+
+## Notice
+
+v1.0.0 has some break changes from v0.8.2.
+
+- Removed some non gonic function name `Id`, `Sql`, please use `ID`, `SQL` instead.
+- Removed the dependent from `xorm.io/core` and moved the codes to `xorm.io/xorm/core`, `xorm.io/xorm/names`, `xorm.io/xorm/schemas` and others.
+- Renamed some interface names. i.e. `core.IMapper` -> `names.Mapper`, `core.ILogger` -> `log.Logger`.
+
 ## Features
 
 * Struct <-> Table Mapping Support
-
 * Chainable APIs
-
 * Transaction Support
-
 * Both ORM and raw SQL operation Support
-
 * Sync database schema Support
-
 * Query Cache speed up
-
-* Database Reverse support, See [Xorm Tool README](https://github.com/xormsharp/cmd/blob/master/README.md)
-
+* Database Reverse support via [xorm.io/reverse](https://xorm.io/reverse)
 * Simple cascade loading support
-
 * Optimistic Locking support
-
-* SQL Builder support via [github.com/xormsharp/builder](https://github.com/xormsharp/builder)
-
+* SQL Builder support via [xorm.io/builder](https://xorm.io/builder)
 * Automatical Read/Write seperatelly
-
 * Postgres schema support
-
 * Context Cache support
+* Support log/SQLLog context
 
 ## Drivers Support
 
 Drivers for Go's sql package which currently support database/sql includes:
 
-* Mysql: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
+* [Mysql5.*](https://github.com/mysql/mysql-server/tree/5.7) / [Mysql8.*](https://github.com/mysql/mysql-server) / [Mariadb](https://github.com/MariaDB/server) / [Tidb](https://github.com/pingcap/tidb)
+  - [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
+  - [github.com/ziutek/mymysql/godrv](https://github.com/ziutek/mymysql/godrv)
 
-* MyMysql: [github.com/ziutek/mymysql/godrv](https://github.com/ziutek/mymysql/tree/master/godrv)
+* [Postgres](https://github.com/postgres/postgres) / [Cockroach](https://github.com/cockroachdb/cockroach)
+  - [github.com/lib/pq](https://github.com/lib/pq)
 
-* Postgres: [github.com/lib/pq](https://github.com/lib/pq)
+* [SQLite](https://sqlite.org)
+  - [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
 
-* Tidb: [github.com/pingcap/tidb](https://github.com/pingcap/tidb)
+* MsSql
+  - [github.com/denisenkom/go-mssqldb](https://github.com/denisenkom/go-mssqldb)
 
-* SQLite: [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
-
-* MsSql: [github.com/denisenkom/go-mssqldb](https://github.com/denisenkom/go-mssqldb)
-
-* Oracle: [github.com/mattn/go-oci8](https://github.com/mattn/go-oci8) (experiment)
+* Oracle
+  - [github.com/mattn/go-oci8](https://github.com/mattn/go-oci8) (experiment)
 
 ## Installation
 
-	go get github.com/xormsharp/xorm
+	go get xorm.io/xorm
 
 ## Documents
 
-* [Manual](http://github.com/xormsharp/docs)
+* [Manual](http://xorm.io/docs)
 
-* [GoDoc](http://godoc.org/github.com/xormsharp/xorm)
+* [GoDoc](http://pkg.go.dev/xorm.io/xorm)
 
 ## Quick Start
 
 * Create Engine
+
+Firstly, we should new an engine for a database.
 
 ```Go
 engine, err := xorm.NewEngine(driverName, dataSourceName)
@@ -318,7 +313,7 @@ err := engine.Where(builder.NotIn("a", 1, 2).And(builder.In("b", "c", "d", "e"))
 // SELECT id, name ... FROM user WHERE a NOT IN (?, ?) AND b IN (?, ?, ?)
 ```
 
-* Multiple operations in one go routine, no transation here but resue session memory
+* Multiple operations in one go routine, no transaction here but resue session memory
 
 ```Go
 session := engine.NewSession()
@@ -341,7 +336,7 @@ if _, err := session.Exec("delete from userinfo where username = ?", user2.Usern
 return nil
 ```
 
-* Transation should on one go routine. There is transaction and resue session memory
+* Transaction should be on one go routine. There is transaction and resue session memory
 
 ```Go
 session := engine.NewSession()
@@ -423,7 +418,7 @@ res, err := engine.Transaction(func(session *xorm.Session) (interface{}, error) 
 
 ## Contributing
 
-If you want to pull request, please see [CONTRIBUTING](https://github.com/xormsharp/xorm/blob/master/CONTRIBUTING.md). And we also provide [Xorm on Google Groups](https://groups.google.com/forum/#!forum/xorm) to discuss.
+If you want to pull request, please see [CONTRIBUTING](https://gitea.com/xorm/xorm/src/branch/master/CONTRIBUTING.md). And you can also go to [Xorm on discourse](https://xorm.discourse.group) to discuss.
 
 ## Credits
 
@@ -444,27 +439,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 ## Changelog
 
-* **v0.7.0**
-    * Some bugs fixed
-
-* **v0.6.6**
-    * Some bugs fixed
-
-* **v0.6.5**
-    * Postgres schema support
-    * vgo support
-    * Add FindAndCount
-    * Database special params support via NewEngineWithParams
-    * Some bugs fixed
-
-* **v0.6.4**
-    * Automatical Read/Write seperatelly
-    * Query/QueryString/QueryInterface and action with Where/And
-    * Get support non-struct variables
-    * BufferSize on Iterate
-    * fix some other bugs.
-
-[More changes ...](https://github.com/xormsharp/manual-en-US/tree/master/chapter-16)
+You can find all the changelog [here](CHANGELOG.md)
 
 ## Cases
 

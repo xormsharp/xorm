@@ -8,9 +8,9 @@ Package xorm is a simple and powerful ORM for Go.
 
 Installation
 
-Make sure you have installed Go 1.6+ and then:
+Make sure you have installed Go 1.11+ and then:
 
-    go get github.com/xormsharp/xorm
+    go get github.com/xormsharp
 
 Create Engine
 
@@ -126,7 +126,7 @@ Attention: the above 8 methods should be the last chainable method.
 
     engine.ID(1).Get(&user) // for single primary key
     // SELECT * FROM user WHERE id = 1
-    engine.ID(core.PK{1, 2}).Get(&user) // for composite primary keys
+    engine.ID(schemas.PK{1, 2}).Get(&user) // for composite primary keys
     // SELECT * FROM user WHERE id1 = 1 AND id2 = 2
     engine.In("id", 1, 2, 3).Find(&users)
     // SELECT * FROM user WHERE id IN (1, 2, 3)
@@ -179,6 +179,6 @@ Attention: the above 8 methods should be the last chainable method.
     engine.Join("LEFT", "userdetail", "user.id=userdetail.id").Find(&users)
     //SELECT * FROM user LEFT JOIN userdetail ON user.id=userdetail.id
 
-More usage, please visit http://github.com/xormsharp/docs
+More usage, please visit http://xorm.io/docs
 */
 package xorm
